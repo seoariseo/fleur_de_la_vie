@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style type="text/css">
+
+        .box    {
+            width: 1000px;height: 300px;
+            margin: 100px auto;
+            /* background-color: green; */
+            border: 1px solid red;
+            position: relative;
+        }
+
+        .box div{
+            width: 500px;height: 300px;
+            position: absolute;
+            top: 0;
+            transition: all 0.3s;opacity:0.5;
+        }
+        .box .box1{
+            left: -100%; 
+            background-color: orange;
+        }
+        .box .box2{
+            right: -100%;
+            background-color: aqua;
+        }
+        .box .box3{
+            left: -100%; 
+            background-color: orange;
+        }
+        .box .box4{
+            right: -100%;
+            background-color: aqua;
+        }
+
+
+    </style>
+
+    <script >
+        $(function(){
+
+        for(let i=0; i <=300; i++){
+            if(".box1" == 0){
+                $(".box1").animate({left : "50px"})
+                document.write(i)
+            }else{
+
+            }
+        } 
+    })
+        
+    </script>
+
+</head>
+<body>
+    <div class="box">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+    </div>
+</body>
+</html>

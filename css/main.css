@@ -159,6 +159,7 @@ border: none;
 
 width: 20px;
 height: 25px;
+cursor: pointer;
 
 }
 .m_img .slick-arrow.slick-prev{
@@ -188,6 +189,7 @@ height: 25px;
     top: 90%;
     left: 50%;
     transform: translateX(-50%);
+    cursor: pointer;
 }
 
 .m_img .slick-dots li {
@@ -229,5 +231,259 @@ height: 25px;
     line-height: 1.2;
     margin-top: 10px;
 }
+
+
+
+/* <!-- 플라워 섹션 영역 --> */
+
+.flower_sectioin{
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background-color: #ffecec;
+    box-shadow: 0 1px 5px #ccc;
+}
+
+.flower_sectioin > div{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 1px 1px 5px #ccc;
+}
+
+
+
+.f_img_left01{
+    background: url(../images/flower_main01.jpg) no-repeat center center;
+    top: 15px;
+    left: 15px;
+    animation:f_img_left 7s ease-in-out forwards;
+    transition: all 0.3s;
+}
+
+@keyframes f_img_left {
+        0%{
+            top: 15px;
+            left: -50px;
+            opacity: 0;
+        }
+
+
+        30%,50%, 70%{
+            top: 15px;
+            left: 15px;
+            opacity: 1;
+        }
+
+
+        100%{
+            opacity: 0;
+        }
+}
+
+.f_img_left02{
+    background: url(../images/flower_main02.jpg) no-repeat center center;
+    top: 15px;
+    left: -50px;
+    transition: all 0.3s 0.5;
+    opacity: 0;
+    animation:f_img_left 7s 12s ease-in-out forwards ;
+    transition: all 0.3s;
+}
+
+
+.f_img_leftTxt{
+    /* border: 1px solid red; */
+    width: 260px;
+    margin-left: 160px;
+    padding: 5px;
+    color: #333;
+    font-size: 2.5vw;
+}
+.f_img_leftTxt h3{
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 3.5vw;
+}
+.f_img_leftTxt p{
+    font-size: 3.5vw;
+}
+
+.f_img_leftTxt p a{
+    margin: 15px 0 0 170px;
+    font-size: 2.5vw;
+}
+
+
+.f_img_right01{
+    background: url(../images/flower_main03.jpg) no-repeat center center;
+    top: 15px;
+    right: -100%;
+    animation: f_img_right 10s 5s forwards ease-in-out ;
+}
+
+@keyframes f_img_right {
+    0%{
+        top: 15px;
+        right: -50px;
+        opacity: 0;
+    }
+
+
+    30%,50%, 70%{
+        top: 15px;
+        right: 15px;
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+.f_img_right02{
+    background: url(../images/flower_main04.jpg) no-repeat center center;
+    top: 15px;
+    right: -100%;
+    animation: f_img_right 10s 18s forwards ease-in-out ;
+}
+
+
+.f_img_rightTxt{
+    position: absolute;
+    top: 0px;
+    right: 160px;
+    /* border: 1px solid red; */
+    width: 260px;
+    padding: 5px;
+    color: #333;
+    font-size: 2.5vw;
+    text-align: right;
+}
+
+.f_img_rightTxt h3{
+    font-weight: 600;
+    margin-top: 10px;
+    font-size: 3.5vw;
+}
+
+.f_img_rightTxt p{
+    font-size: 3.5vw;
+}
+
+.f_img_rightTxt p a{
+    margin: 15px 170px 0 0;
+    font-size: 2.5vw;
+}
+
+
+
+/* <!-- 베스트 플라워 섹션 영역 --> */
+
+.best_flower{
+    width: 100%;
+    height: 250px;
+    /* border: 1px solid red; */
+    padding: 0 10px 0 10px;
+    position: relative;
+}
+.best_flower h1{text-shadow: 1px 1px 2px #ccc;
+    margin: 50px 15px 30px ;
+}
+
+.bf_img_box {
+    /* border: 1px solid red; */
+    
+}
+
+.bf_img_list{
+    display: flex;
+    justify-content: space-between;
+
+}
+.bf_img_list > li{
+    width: 100px;
+    height: 140px;
+    /* border: 1px solid red; */
+    transition: all 0.3s;
+    
+}
+
+.bf_img_list > li > a{
+    text-align: center;
+    padding: 5px;
+}
+
+.bf_img_list > li > a > img{
+    width: 100%;
+    height: 100%;
+}
+
+.bf_img_list >  li > a:hover{
+    text-decoration: underline;
+    color: #ff9393;
+}
+
+.bf_img_list li a p{
+    margin-top: 20px;
+}
+
+
+.bf_sub{
+    width: 430px;
+    height: 150px;
+    margin-top: 20px;
+    background-color: #fffbfb;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px #ddd, 0 -2px 5px #eee;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    display: none;
+}
+.bf_sub li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.bf_sub li a img{
+    width: 150px;
+    height: 140px;
+    /* border: 1px solid red; */
+}
+
+.sub_txt{
+    width: 250px;
+    /* border: 1px solid red; */
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #333;
+}
+
+.sub_txt h3{margin-bottom: 10px;}
+
+.sub_txt p{
+    font-size: 14px;
+    line-height: 1.2;
+}
+.sub_txt p span{
+    margin-left: 10px;
+    font-size: 11px;
+}
+
+.sub_txt p span:hover{
+    text-decoration: underline;
+    color: #ff9393;
+}
+
+
+
 
 

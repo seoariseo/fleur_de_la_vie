@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+*{cursor: url(../images/favicon-32x32.png) 4 4 , auto;}
 
 .s_section {
     width: 100%;
