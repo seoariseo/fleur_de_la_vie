@@ -1,68 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/jquery-ui.js"></script>
+    <script src="script/"></script>
     <style type="text/css">
-
-        .box    {
-            width: 1000px;height: 300px;
+        .box {
+            width: 1000px;
+            height: 300px;
             margin: 100px auto;
             /* background-color: green; */
             border: 1px solid red;
             position: relative;
+            /* overflow: hidden; */
         }
 
-        .box div{
-            width: 500px;height: 300px;
+        .box div {
+            width: 500px;
+            height: 300px;
             position: absolute;
             top: 0;
-            transition: all 0.3s;opacity:0.5;
-        }
-        .box .box1{
-            left: -100%; 
-            background-color: orange;
-        }
-        .box .box2{
-            right: -100%;
-            background-color: aqua;
-        }
-        .box .box3{
-            left: -100%; 
-            background-color: orange;
-        }
-        .box .box4{
-            right: -100%;
-            background-color: aqua;
+            /* transition: all 0.3s; */
+            /* opacity:0; */
+            /* display: none; */
         }
 
+        .box #box1 {
+            left: -100%;
+            background-color: orange;
+        }
 
+        .box #box2 {
+            right: -100%;
+            background-color: red
+        }
+
+        .box #box3 {
+            left: -100%;
+            background-color: greenyellow;
+        }
+
+        .box #box4 {
+            right: -100%;
+            background-color: aqua;
+
+        }
     </style>
 
-    <script >
-        $(function(){
+    <script>
+        $(function () {
+            var images = $(".box .box_b");
+            console.log(images.length)
 
-        for(let i=0; i <=300; i++){
-            if(".box1" == 0){
-                $(".box1").animate({left : "50px"})
-                document.write(i)
-            }else{
+            
 
-            }
-        } 
-    })
-        
+            i = 0;
+            setInterval(function(){
+
+                if( i % 2 == 0 ){
+
+                    images.eq(i).animate({left: "0"}, 1000).delay(2000).animate({left: "-100%"}, 1000, function () {
+                        $(this).css({left:"-100%"}) })
+                        if( i == 3){
+                            i=0
+                        }else{
+                            i++
+                        }//
+
+                } else {
+                    images.eq(i).animate({right: "0"}, 1000).delay(2000).animate({right: "-100%"}, 1000, function () {
+                        $(this).css({right:"-100%"}) })
+
+                        if( i == 3){
+                            i=0;
+                        }else{
+                            i++;
+                        }//
+
+                } 
+                
+
+            }, 3000)//
+
+
+
+        }) //
     </script>
-
 </head>
+
 <body>
     <div class="box">
-        <div class="box1">1</div>
-        <div class="box2">2</div>
-        <div class="box3">3</div>
-        <div class="box4">4</div>
+        <div class="box_b aa" id="box1">1</div>
+        <div class="box_b bb" id="box2">2</div>
+        <div class="box_b cc" id="box3">3</div>
+        <div class="box_b dd" id="box4">4</div>
     </div>
 </body>
+
 </html>

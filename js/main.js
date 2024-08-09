@@ -30,6 +30,37 @@ $(function () {
     })//slick
 
 
+    var images = $(".box");
+                console.log(images.length)         
+
+            i = 0;
+            setInterval(function(){
+
+                if( i % 2 == 0 ){
+
+                    images.eq(i).animate({left: "0"}, 1000).delay(2000).animate({left: "-100%"}, 1000, function () {
+                        $(this).css({left:"-100%"}) })
+                        if( i == 3){
+                            i=0
+                        }else{
+                            i++
+                        }//
+
+                } else {
+                    images.eq(i).animate({right: "0"}, 1000).delay(2000).animate({right: "-100%"}, 1000, function () {
+                        $(this).css({right:"-100%"}) })
+
+                        if( i == 3){
+                            i=0;
+                        }else{
+                            i++;
+                        }//
+
+                } 
+                
+
+            }, 3000)//
+
 
 
 
@@ -54,7 +85,60 @@ $(function () {
         $(".bf_sub").slideUp();
     })//
 
+
+
+    var p_images = $(".box_2");
+    console.log(images.length)         
+
+j = 0;
+setInterval(function(){
+
+    if( j % 2 == 0 ){
+
+        p_images.eq(j).animate({left: "0"}, 1000).delay(2000).animate({left: "-100%"}, 1000, function () {
+            $(this).css({left:"-100%"}) })
+            if( j == 3){
+                j=0
+            }else{
+                j++
+            }//
+
+    } else {
+        p_images.eq(j).animate({right: "0"}, 1000).delay(2000).animate({right: "-100%"}, 1000, function () {
+            $(this).css({right:"-100%"}) })
+
+            if( j == 3){
+                j=0;
+            }else{
+                j++;
+            }//
+
+    } 
     
+
+}, 3000)//
+
+
+
+
+
+    // best plant 영역
+
+    $(".bp_img_list > li ").hover(function(){
+        $(this).siblings().css({opacity : "0.5"})
+        $(".bp_sub").hide();
+        $(this).find(".bp_sub").slideDown();
+        
+    },function(){
+        $(".bp_img_list > li" ).css({opacity : "1"});
+        $(".bp_sub").stop().slideUp();
+    })
+
+    $(".bp_sub").hover(function(){
+        $(this).stop();
+    },function(){
+        $(".bp_sub").slideUp();
+    })//
 
 
 
