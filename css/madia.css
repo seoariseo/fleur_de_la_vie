@@ -1,0 +1,144 @@
+@charset 'utf-8';
+
+@media screen and (min-width : 1920px ) {
+    .header{
+    background-color: #ffefefef; height: 120px; }
+    .head_inner{display: block;}
+    .h_title h1 {
+        font-size: 2vw;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        text-shadow: 1px 2px 2px #ffff , 2px 2px 1px #ff9d9d ;
+    }
+    .h_title span{padding-left: 20px;}
+    
+
+    .h_left{display: none;}
+    .h_right{display: none;}
+
+    .login{font-size: 0.6rem; width: 150px; position: absolute;
+        top: 40px;
+        right: 60px;
+    }
+
+    .full_nav{
+        width: 100%;
+        display: block;
+    }
+    .full_menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .full_menu > li{
+        position: relative;
+    }
+    
+    .full_menu > li > a{
+        width:200px;
+        text-align: center;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-shadow: 1px 2px 2px #ffff , 2px 2px 1px #ff9d9d ;
+    }
+
+    .full_sub{
+        position: absolute;
+        margin-top: 20px;
+        display: none;
+    }
+    
+    .full_sub li{
+        
+    }
+    
+    .full_sub li a{
+        width: 200px;
+        height: 50px;
+        font-size: 0.8rem;
+        line-height: 50px;
+        text-shadow: 1px 1px 1px #aaa;
+    }
+
+    .full_menu > li > a:hover{
+        color: #ffa8a8;
+    }
+
+    .full_sub li:hover a{
+        color: #ffa8a8;
+    }
+
+    .ful_sub_bg{
+        background-color: #f8f8f8c2;
+        width: 100%; 
+        height: 150px;
+        margin-top: 18px;
+        display: none;
+}
+
+.login_2{text-shadow: 1px 2px 2px #ffff , 2px 2px 1px #ff9d9d ;}
+.login_2 a{font-weight: bold; }
+.login_2:hover{   color: #ffa8a8; }
+
+
+/* <!-- main_img_slide 영역 --> */
+
+.main_img_slide {}
+
+.m_img li{height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.m_img_txtBox{ 
+    width: 1000px;
+    height: 250px;
+    margin-top: 30px;
+}
+
+.m_img_txtBox p {
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+.m_img_txtBox .h_title{font-size: 1.5rem; margin-bottom: 20px;}
+
+
+
+/* <!-- 플라워 섹션 영역 --> */
+
+.flower_section {
+    height: 250px;
+}
+
+.flower_section>div {
+    width: 250px;
+    height: 250px;
+}
+
+
+.f_img_leftTxt {
+    font-size: 0.5rem;
+    margin-left: 00px;
+}
+
+.f_img_leftTxt h3 {
+    font-size: 0.5rem;
+}
+
+.f_img_leftTxt p {
+    font-size: 0.7rem;
+}
+
+.f_img_leftTxt p a{
+    font-size: 0.4rem;
+}
+
+}/* media */

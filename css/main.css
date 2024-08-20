@@ -2,6 +2,7 @@
 
 /* 기본 430 */
 .wrap {
+    min-width: 430px;
     width: 100%;
     font-size: 16px;
     /* border: 1px solid blue; */
@@ -22,6 +23,7 @@
 }
 
 .head_inner {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,6 +103,8 @@
 
 
 
+
+
 /* <!-- main_img_slide 영역 --> */
 
 .main_img_slide {
@@ -152,7 +156,7 @@
     width: 20px;
     height: 25px;
     cursor: pointer;
-
+    
 }
 
 .m_img .slick-arrow.slick-prev {
@@ -235,112 +239,65 @@
 .flower_section {
     width: 100%;
     height: 150px;
-    position: relative;
     background-color: #ffecec;
     box-shadow: 0 1px 5px #ccc;
 }
 
-.flower_section>div {
+.f_imgBox{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+.f_imgBox li{
     width: 150px;
     height: 150px;
-    background-size: cover;
-    border-radius: 10px;
-    position: absolute;
-    box-shadow: 1px 1px 5px #ccc;
+    margin-top: 30px;
+    position: relative;
 }
 
+.f_img_txt{
+    position: absolute;
+    top: 130px;
+}
+
+.f_img_txt h2{
+    font-size: 0.8rem;
+}
+.f_img_txt p{
+    font-size: 0.5rem;
+}
+
+.f_img_txt li{}
 
 
-#f_img_left01 {
+
+
+
+.f_img01 {
     background: url(../images/flower_main01.jpg) no-repeat center center;
     background-size: cover;
-    top: 15px;
-    left: -100%;
-    animation: f_img_left 7s ease-in-out forwards;
-    transition: all 0.3s;
 }
 
 
-#f_img_left02 {
+.f_img02 {
     background: url(../images/flower_main02.jpg) no-repeat center center;
     background-size: cover;
-    top: 15px;
-    left: -100%;
-    transition: all 0.3s 0.5;
-    /* opacity: 0; */
-    animation: f_img_left 7s 12s ease-in-out forwards;
-    transition: all 0.3s;
 }
 
 
-.f_img_leftTxt {
-    /* border: 1px solid red; */
-    width: 260px;
-    margin-left: 160px;
-    padding: 5px;
-    color: #333;
-    font-size: 2.5vw;
-}
-
-.f_img_leftTxt h3 {
-    font-weight: 600;
-    margin-top: 10px;
-    font-size: 3.5vw;
-}
-
-.f_img_leftTxt p {
-    font-size: 3.5vw;
-}
-
-.f_img_leftTxt p a {
-    margin: 15px 0 0 170px;
-    font-size: 2.5vw;
-}
-
-
-#f_img_right01 {
+.f_img03 {
     background: url(../images/flower_main03.jpg) no-repeat center center;
     background-size: cover;
-    top: 15px;
-    right: -100%;
-    animation: f_img_right 10s 5s forwards ease-in-out;
 }
 
 
-#f_img_right02 {
+.f_img04 {
     background: url(../images/flower_main04.jpg) no-repeat center center;
     background-size: cover;
-    top: 15px;
-    right: -100%;
-    animation: f_img_right 10s 18s forwards ease-in-out;
-}
-
-
-.f_img_rightTxt {
-    position: absolute;
-    top: 0px;
-    right: 160px;
-    /* border: 1px solid red; */
-    width: 260px;
-    padding: 5px;
-    color: #333;
-    font-size: 2.5vw;
-    text-align: right;
-}
-
-.f_img_rightTxt h3 {
-    font-weight: 600;
-    margin-top: 10px;
-    font-size: 3.5vw;
-}
-
-.f_img_rightTxt p {
-    font-size: 3.5vw;
-}
-
-.f_img_rightTxt p a {
-    margin: 15px 170px 0 0;
-    font-size: 2.5vw;
 }
 
 
@@ -353,6 +310,7 @@
     /* border: 1px solid red; */
     padding: 0 10px 0 10px;
     position: relative;
+    margin-top: 500px;
 }
 
 .best_flower h1 {
@@ -871,3 +829,43 @@
     transition: all 0.3s ease-in-out;
     /* z-index: 100; */
 }
+
+
+
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background: url(../images/bg_1.jpg) no-repeat center center / cover;
+    background-color: #fcc2c2;
+}
+
+.foot_up{
+    color: #222;
+}
+
+.foot_up_inner{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.foot_up_inner h2{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.foot_down{
+    background-color: #ffecec;
+    margin-top: 10px;
+    color: #222;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.full_nav{display: none;}

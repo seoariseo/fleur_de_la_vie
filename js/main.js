@@ -30,36 +30,36 @@ $(function () {
     })//slick
 
 
-    var images = $(".box");
-                console.log(images.length)         
+    // var images = $(".box");
+    //             console.log(images.length)         
 
-            i = 0;
-            setInterval(function(){
+    //         i = 0;
+    //         setInterval(function(){
 
-                if( i % 2 == 0 ){
+    //             if( i % 2 == 0 ){
 
-                    images.eq(i).animate({left: "0"}, 1000).delay(2000).animate({left: "-100%"}, 1000, function () {
-                        $(this).css({left:"-100%"}) })
-                        if( i == 3){
-                            i=0
-                        }else{
-                            i++
-                        }//
+    //                 images.eq(i).animate({left: "0"}, 1000).delay(2000).animate({left: "-100%"}, 1000, function () {
+    //                     $(this).css({left:"-100%"}) })
+    //                     if( i == 3){
+    //                         i=0
+    //                     }else{
+    //                         i++
+    //                     }//
 
-                } else {
-                    images.eq(i).animate({right: "0"}, 1000).delay(2000).animate({right: "-100%"}, 1000, function () {
-                        $(this).css({right:"-100%"}) })
+    //             } else {
+    //                 images.eq(i).animate({right: "0"}, 1000).delay(2000).animate({right: "-100%"}, 1000, function () {
+    //                     $(this).css({right:"-100%"}) })
 
-                        if( i == 3){
-                            i=0;
-                        }else{
-                            i++;
-                        }//
+    //                     if( i == 3){
+    //                         i=0;
+    //                     }else{
+    //                         i++;
+    //                     }//
 
-                } 
+    //             } 
                 
 
-            }, 3000)//
+    //         }, 3000)//
 
 
 
@@ -87,36 +87,36 @@ $(function () {
 
 
 
-    var p_images = $(".box_2");
-    console.log(images.length)         
+//     var p_images = $(".box_2");
+//     console.log(images.length)         
 
-j = 1;
-setInterval(function(){
+// j = 1;
+// setInterval(function(){
 
-    if( j % 3 == 0 ){
+//     if( j % 3 == 0 ){
 
-        p_images.eq(j).animate({left: "0"}, 1000).delay(2000).animate({left: "-100%"}, 600, function () {
-            $(this).css({left:"-100%"}) })
-            if( j == 1){
-                j=0
-            }else{
-                j++
-            }//
+//         p_images.eq(j).animate({left: "0"}, 1000).delay(2000).animate({left: "-100%"}, 600, function () {
+//             $(this).css({left:"-100%"}) })
+//             if( j == 1){
+//                 j=0
+//             }else{
+//                 j++
+//             }//
 
-    } else {
-        p_images.eq(j).animate({right: "0"}, 1200).delay(2000).animate({right: "-100%"}, 600, function () {
-            $(this).css({right:"-100%"}) })
+//     } else {
+//         p_images.eq(j).animate({right: "0"}, 1200).delay(2000).animate({right: "-100%"}, 600, function () {
+//             $(this).css({right:"-100%"}) })
 
-            if( j == 1){
-                j=0;
-            }else{
-                j++;
-            }//
+//             if( j == 1){
+//                 j=0;
+//             }else{
+//                 j++;
+//             }//
 
-    } 
+//     } 
     
 
-}, 2500)//
+// }, 2500)//
 
 
 
@@ -165,3 +165,5 @@ setInterval(function(){
 
 
 }) //jquery
+
+
