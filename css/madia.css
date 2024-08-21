@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-@media screen and (min-width : 1920px ) {
+@media screen and (min-width :1200px ) {
     .header{
     background-color: #ffefefef; height: 120px; }
     .head_inner{display: block;}
@@ -14,7 +14,7 @@
         text-shadow: 1px 2px 2px #ffff , 2px 2px 1px #ff9d9d ;
     }
     .h_title span{padding-left: 20px;}
-    
+    .menu_pop{display: none;}
 
     .h_left{display: none;}
     .h_right{display: none;}

@@ -152,7 +152,7 @@ $(function () {
 
 
     $(".menu_btn").click( function(){
-        $(".menu_pop").css({left : "0" });
+        $(".menu_pop").css({left : "0", display : "block" });
         $(".pop_bg").fadeIn();
     })//click
     
