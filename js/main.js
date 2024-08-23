@@ -72,11 +72,13 @@ $(function () {
     $(".bf_img_list > li ").hover(function(){
         $(this).siblings().css({opacity : "0.5"})
         $(".bf_sub").hide();
-        $(this).find(".bf_sub").slideDown("fast");
+        $(this).find(".bf_sub").slideDown();
+        $(".plant_section").css({"z-index" : "-1"});
         
     },function(){
         $(".bf_img_list > li" ).css({opacity : "1"});
         $(".bf_sub").stop().slideUp();
+        $(".plant_section").css({"z-index" : "0"});
     })
 
     $(".bf_sub").hover(function(){
@@ -153,12 +155,12 @@ $(function () {
 
     $(".menu_btn").click( function(){
         $(".menu_pop").css({left : "0", display : "block" });
-        $(".pop_bg").fadeIn();
+        $(".pop_bg").fadeIn(500);
     })//click
     
     $(".menu_closeBtn").click(function(){
         $(".menu_pop").css({left : "-100%"})
-        $(".pop_bg").fadeOut();
+        $(".pop_bg").fadeOut(200);
     })//(".menu_closeBtn").click
 
 
