@@ -68,18 +68,32 @@ $(function () {
 
 
     // best flower 영역
-    
-    $(".bf_sub").hide();
-    $(".bf_img_list > li ").hover(function(){
+
+    $(".bf_img_list > li").mouseover(function(){
         $(this).siblings().css({opacity : "0.5"})
-        $(this).find(".bf_sub").slideDown();
-        $(".plant_section").css({"z-index" : "-1"});
-        
-    },function(){
-        $(".bf_img_list > li" ).css({opacity : "1"});
-        $(".bf_sub").stop().slideUp();
-        $(".plant_section").css({"z-index" : "0"});
+        $(this).find(".bf_sub").stop().slideDown();
     })
+    $(".bf_img_list > li").mouseleave(function(){
+        $(".bf_img_list > li" ).css({opacity : "1"});
+            $(".bf_sub").stop().slideUp();
+    })
+
+
+
+
+
+    
+    // $(".bf_sub").hide();
+    // $(".bf_img_list > li ").hover(function(){
+    //     $(this).siblings().css({opacity : "0.5"})
+    //     $(this).find(".bf_sub").slideDown();
+    //     $(".plant_section").css({"z-index" : "-1"});
+        
+    // },function(){
+    //     $(".bf_img_list > li" ).css({opacity : "1"});
+    //     $(".bf_sub").stop().slideUp();
+    //     $(".plant_section").css({"z-index" : "0"});
+    // })
 
     // $(".bf_sub").hover(function(){
     //     $(this).stop();
@@ -140,7 +154,6 @@ $(".bp_img_list > li").mouseover(function(){
         $(".bp_img_list > li" ).css({opacity : "1"});
             $(".bp_sub").stop().slideUp();
     })
-})
 
 
 
