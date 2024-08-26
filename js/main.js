@@ -125,6 +125,11 @@ $(function () {
 
 
 
+// $(".bp_img_list > li").click(function(){
+//     $(".bp_sub").hide();
+//     $(this).find(".bp_sub").slideDown();
+// })
+
 
 
     // best plant 영역
