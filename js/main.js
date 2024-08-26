@@ -140,18 +140,6 @@ $(".bp_img_list > li").on({
     mouseleave:function(){
         $(".bp_img_list > li" ).css({opacity : "1"});
             $(".bp_sub").stop().slideUp();
-    },
-    click :function(){
-        $(".bp_img_list > li").find(".bp_sub").slideUp();
-        if ($(this).hasClass("act")){
-    
-            $(this).find(".bp_sub").slideUp();
-            
-            $(this).removeClass("act");
-        }else{
-            $(this).addClass("act")
-            $(this).find(".bp_sub").slideDown();
-        }
     }
 })
 
