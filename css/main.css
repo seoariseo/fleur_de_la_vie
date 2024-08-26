@@ -1,9 +1,11 @@
 @charset "utf-8";
 
 /* 기본 393 */
+html,body{height: 100vh;}
 .wrap {
     min-width:393px;
     width: 100%;
+    height: 100vh;
     font-size: 16px;
     /* border: 1px solid blue; */
     overflow-x: hidden;
@@ -423,7 +425,7 @@
 
 
 .bf_sub {
-    width: 90% ;
+    width: 92% ;
     height:180px ;
     background-color: #fffbfb;
     border-radius: 15px;
@@ -460,6 +462,7 @@
     flex-direction: column;
     justify-content: space-between;
     color: #333;
+    word-spacing: -1px;
 }
 
 .sub_txt h3 {
@@ -651,7 +654,7 @@
 
 
 .bp_sub {
-    width: 90%;
+    width: 92%;
     height: 180px;
     margin-top: 20px;
     background-color: #fbfff1;
@@ -685,6 +688,7 @@
     flex-direction: column;
     justify-content: space-between;
     color: #333;
+    word-spacing: -1px;
 }
 
 .sub_txt h3 {
