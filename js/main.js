@@ -69,6 +69,7 @@ $(function () {
 
     // best flower 영역
 
+    $(".bf_sub").hide();
     $(".bf_img_list > li").mouseover(function(){
         $(this).siblings().css({opacity : "0.5"})
         $(this).find(".bf_sub").stop().slideDown();
@@ -145,7 +146,7 @@ $(function () {
 //     $(this).find(".bp_sub").slideDown();
 // })
 
-
+$(".bp_sub").hide();
 $(".bp_img_list > li").mouseover(function(){
         $(this).siblings().css({opacity : "0.5"})
         $(this).find(".bp_sub").stop().slideDown();
