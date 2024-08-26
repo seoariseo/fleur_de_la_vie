@@ -373,9 +373,6 @@
     height: 250px;
     /* border: 1px solid red; */
     padding: 0 10px 0 10px;
- 
-    margin-top: 50px;
-    border: 1px solid red;
 }
 
 .best_flower h1 {
@@ -392,7 +389,7 @@
     display: flex;
     position: relative;
     justify-content: space-between;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
@@ -425,15 +422,14 @@
 
 
 .bf_sub {
-    width: 90% !important;
-    height:500px ;
-    /* margin-top: 20px; */
+    width: 90% ;
+    height:180px ;
     background-color: #fffbfb;
     border-radius: 15px;
     box-shadow: 0 2px 5px #ddd, 0 -2px 5px #eee;
     position: absolute;
-    top: 150px !important;
-    left: 5% !important;
+    top: 150px ;
+    left: 5% ;
     /* display: none; */
     z-index: 500;
     padding: 5px;
@@ -451,7 +447,7 @@
 .bf_sub li a img {
     width: 120px;
     height: 120px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     /* border: 1px solid red; */
 }
 
@@ -602,7 +598,7 @@
 
 .best_plant {
     width: 100%;
-    height: 250px;
+    height: auto;
     /* border: 1px solid red; */
     padding: 0 10px 0 10px;
     position: relative;
@@ -655,7 +651,7 @@
 
 .bp_sub {
     width: 90%;
-    height: 150px;
+    height: 180px;
     margin-top: 20px;
     background-color: #fbfff1;
     border-radius: 15px;
@@ -897,14 +893,13 @@
 }
 
 
-
+/* footer 영역 */
 
 .footer{
     width: 100%;
-    height: 150px;
-    background: url(../images/bg_1.jpg) no-repeat center center / cover;
+    height: 180px;
     background-color: #fcc2c2;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .foot_up{
@@ -912,12 +907,12 @@
 }
 
 .foot_up_inner{
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     text-align: center;
     font-size: 12px;
     line-height: 1.5;
-    padding: 5px;
+    padding: 20px 0;
 }
 
 .foot_up_inner h2{
@@ -925,9 +920,15 @@
     margin-bottom: 5px;
 }
 
+.foot_up_inner span{
+    display: inline-block;
+}
+
+
+
 .foot_down{
+    height: 50px;
     background-color: #ffecec;
-    margin-top: 10px;
     color: #222;
     padding: 15px 0;
     text-align: center;

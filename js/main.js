@@ -69,9 +69,9 @@ $(function () {
 
     // best flower 영역
     
+    $(".bf_sub").hide();
     $(".bf_img_list > li ").hover(function(){
         $(this).siblings().css({opacity : "0.5"})
-        $(".bf_sub").hide();
         $(this).find(".bf_sub").slideDown();
         $(".plant_section").css({"z-index" : "-1"});
         
@@ -125,10 +125,10 @@ $(function () {
 
 
     // best plant 영역
-
+    
+    $(".bp_sub").hide();
     $(".bp_img_list > li ").hover(function(){
         $(this).siblings().css({opacity : "0.5"})
-        $(".bp_sub").hide();
         $(this).find(".bp_sub").slideDown();
         
     },function(){
@@ -165,6 +165,14 @@ $(function () {
 
 
 
+    
+    // 1920px 메뉴 호버
+
+    $(".full_menu > li > a , .full_sub , .ful_sub_bg ").hover(function(){
+        $(".full_sub  , .ful_sub_bg").stop().slideDown();
+    }, function(){
+        $(".full_sub  , .ful_sub_bg").stop().slideUp();
+    })
 
 }) //jquery
 

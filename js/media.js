@@ -136,11 +136,20 @@ setInterval(function(){
 
 
 
+
+
+    // 메뉴 호버
+
+    $(".full_menu > li > a").hover(function(){
+        $(".full_sub li" ,".ful_sub_bg").stop().slideDown();
+    }, function(){
+        $(".full_sub li" ,".ful_sub_bg").stop().slideUp();
+    })
+
     
 
-}, 2500)//
+})//
 
 
 
 
-})//jq
