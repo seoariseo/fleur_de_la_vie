@@ -132,15 +132,14 @@ $(function () {
 // })
 
 
-$(".bp_img_list > li").on({
-    mouseover:function(){
+$(".bp_img_list > li").mouseover(function(){
         $(this).siblings().css({opacity : "0.5"})
-        $(this).find(".bp_sub").slideDown();
-    },
-    mouseleave:function(){
+        $(this).find(".bp_sub").stop().slideDown();
+    })
+    $(".bp_img_list > li").mouseleave(function(){
         $(".bp_img_list > li" ).css({opacity : "1"});
             $(".bp_sub").stop().slideUp();
-    }
+    })
 })
 
 
