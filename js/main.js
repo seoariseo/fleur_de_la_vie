@@ -153,6 +153,8 @@ $(function () {
     })//(".main > li , .sub_menu").hover
 
 
+
+    //팝메뉴
     $(".menu_btn").click( function(){
         $(".menu_pop").css({left : "0", display : "block" });
         $(".pop_bg").fadeIn(500);
