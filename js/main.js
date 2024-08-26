@@ -81,11 +81,11 @@ $(function () {
         $(".plant_section").css({"z-index" : "0"});
     })
 
-    $(".bf_sub").hover(function(){
-        $(this).stop();
-    },function(){
-        $(".bf_sub").slideUp();
-    })//
+    // $(".bf_sub").hover(function(){
+    //     $(this).stop();
+    // },function(){
+    //     $(".bf_sub").slideUp();
+    // })//
 
 
 
@@ -124,6 +124,9 @@ $(function () {
 
 
 
+
+
+
     // best plant 영역
     
     $(".bp_sub").hide();
@@ -136,11 +139,11 @@ $(function () {
         $(".bp_sub").stop().slideUp();
     })
 
-    $(".bp_sub").hover(function(){
-        $(this).stop();
-    },function(){
-        $(".bp_sub").slideUp();
-    })//
+    // $(".bp_sub").hover(function(){
+    //     $(this).stop();
+    // },function(){
+    //     $(".bp_sub").slideUp();
+    // })//
 
 
 
