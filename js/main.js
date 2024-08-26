@@ -125,24 +125,67 @@ $(function () {
 
 
 
+
 // $(".bp_img_list > li").click(function(){
 //     $(".bp_sub").hide();
 //     $(this).find(".bp_sub").slideDown();
 // })
 
 
-
-    // best plant 영역
-    
-    $(".bp_sub").hide();
-    $(".bp_img_list > li ").hover(function(){
+$(".bp_img_list > li").on({
+    mouseover:function(){
         $(this).siblings().css({opacity : "0.5"})
         $(this).find(".bp_sub").slideDown();
-        
-    },function(){
+    },
+    mouseleave:function(){
         $(".bp_img_list > li" ).css({opacity : "1"});
-        $(".bp_sub").stop().slideUp();
-    })
+            $(".bp_sub").stop().slideUp();
+    },
+    click :function(){
+        $(".bp_img_list > li").find(".bp_sub").slideUp();
+        if ($(this).hasClass("act")){
+    
+            $(this).find(".bp_sub").slideUp();
+            
+            $(this).removeClass("act");
+        }else{
+            $(this).addClass("act")
+            $(this).find(".bp_sub").slideDown();
+        }
+    }
+})
+
+
+
+
+
+
+
+    // best plant 영역
+ 
+    // $(".bp_img_list > li").click(function(){
+    //     $(".bp_img_list > li").find(".bp_sub").slideUp();
+    //     if ($(this).hasClass("act")){
+    
+    //         $(this).find(".bp_sub").slideUp();
+    //         // $(this).find(".bp_sub").slideDown();
+    //         $(this).removeClass("act");
+    //     }else{
+    //         $(this).addClass("act")
+    //         $(this).find(".bp_sub").slideDown();
+    //     }
+    // })
+
+
+    // $(".bp_sub").hide();
+    // $(".bp_img_list > li ").hover(function(){
+    //     $(this).siblings().css({opacity : "0.5"})
+    //     $(this).find(".bp_sub").slideDown();
+        
+    // },function(){
+    //     $(".bp_img_list > li" ).css({opacity : "1"});
+    //     $(".bp_sub").stop().slideUp();
+    // })
 
     // $(".bp_sub").hover(function(){
     //     $(this).stop();
